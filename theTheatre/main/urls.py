@@ -8,5 +8,9 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', 'main.views.home', name='home'),
+    url(r'^$', 'main.views.about', name='about'),
+    url(r'^$', 'main.views.performances', name='performances'),
+    url(r'^$', 'main.views.merch', name='merch'),
+    url(r'^$', 'main.views.sales', name='sales'),
     url(r'^admin/', include(admin.site.urls)),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
