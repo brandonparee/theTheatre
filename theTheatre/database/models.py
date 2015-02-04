@@ -7,6 +7,9 @@ class Performance(models.Model):
 	location = models.CharField(max_length=200)
 	start_date = models.DateTimeField('date published')
 
+	def __str__(self):
+		return self.event
+
 
 class Merchandise(models.Model):
 	name = models.CharField(max_length=200)
