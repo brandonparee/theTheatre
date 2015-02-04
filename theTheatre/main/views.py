@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from database.models import Performance, Merchandise, TicketSale
+
 def home(request):
 	return render(request, 'main/index.html', {})
 
