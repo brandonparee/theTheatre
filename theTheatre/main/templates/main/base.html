@@ -1,9 +1,9 @@
 {% load staticfiles %}
 <html>
   <head>
-    <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
     <link href="{% static 'bootstrap/css/style.css' %}" rel="stylesheet" media="screen">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     {% block title %}
     {% endblock %}
   </head>
@@ -25,11 +25,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li class=""><a href="{% url 'main.views.home' %}">Home<span class="sr-only"></span></a></li>
-          <li class=""><a href="{% url 'main.views.about' %}">About<span class="sr-only"></span></a></li>
-          <li class=""><a href="{% url 'main.views.performances' %}">Performances<span class="sr-only"></span></a></li>
-          <li class=""><a href="{% url 'main.views.merch' %}">Merchandise<span class="sr-only"></span></a></li>
-          <li class=""><a href="{% url 'main.views.sales' %}">Sales<span class="sr-only"></span></a></li>
+          <li class="active"><a href="{% url 'main.views.home' %}">Home<span class="sr-only"></span></a></li>
+          <li class="active"><a href="{% url 'main.views.about' %}">About<span class="sr-only"></span></a></li>
+          <li class="active"><a href="{% url 'main.views.performances' %}">Performances<span class="sr-only"></span></a></li>
+          <li class="active"><a href="{% url 'main.views.merch' %}">Merchandise<span class="sr-only"></span></a></li>
+          <li class="active"><a href="{% url 'main.views.sales' %}">Sales<span class="sr-only"></span></a></li>
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Social Media<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -46,12 +46,32 @@
   </nav>
   <div class="main" style="padding-top: 65px">
     <div class="container">
+    <a href="{% url 'main.views.about' %}">Pretentious Theatre Name Here</a>
       {% block content %}
       {% endblock %}
     </div>
 <footer>
+    <div id="social">
     <div class="container">
-    </div>
+      <div class="row centered">
+        
+        <div class="col-lg-3">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+       
+        <div class="col-lg-3">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="col-lg-3">
+          <a href="#"><i class="fa fa-tumblr"></i></a>
+        </div>
+      
+      </div><! --/row -->
+    </div><! --/container -->
+  
 </footer>
   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
