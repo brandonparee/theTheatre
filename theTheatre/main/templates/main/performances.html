@@ -1,5 +1,6 @@
-{% extends "main/base.html" %}
 
+{% extends "main/base.html" %}
+{% load staticfiles %}
 {% block title %}
 <title>the theatre</title>
 {% endblock title %}
@@ -7,4 +8,5 @@
 {% block content %}
 <h1>Content Goes Here for Performances</h1>
 Here is the message variable from my view definition: {{ message }}
+<img src="{% static message %}" alt="test">
 {% endblock %}

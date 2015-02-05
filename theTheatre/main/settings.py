@@ -93,6 +93,4 @@ STATICFILES_DIRS = (
     '/var/www/static/',
 )
 
-FIXTURE_DIRS = (
-    os.path.join(BASE_DIR, "fixtures"),
-)
+FIXTURES_DIRS = (os.path.join(os.path.dirname(__file__), "fixtures"),)
