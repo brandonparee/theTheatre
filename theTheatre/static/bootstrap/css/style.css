@@ -88,6 +88,22 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.about {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-image: url("https://farm5.staticflickr.com/4107/5082213817_08e9837e3f.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+
+}
+
 
 
 .background{
@@ -108,14 +124,43 @@ h2 {
     font-size: 43px;
     margin: center;
 	list-style-type: none;
-	-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
 	
     /*color: rgba(0, 0, 0,0.8);*/
   
 }
 
+.textonpage h3 {
+    font-size: 60px;
+   
+	list-style-type: none;
+-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+	
+    /*color: rgba(0, 0, 0,0.8);*/
+  
+}
 
+.textonpage{
+	
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 1000px;
+    padding: 25px;
+  
+   /* margin: 25px;*/
+
+}
+.textonpage p {
+    font-size: 20px;
+   
+	list-style-type: none;
+-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+	
+    /*color: rgba(0, 0, 0,0.8);*/
+  
+}
 
 
 li{
@@ -147,8 +192,11 @@ li a:hover{
 	color: #1abc9c;
 }
 
+.collapse {
+	 color: rgba(255, 255, 255, 0.6);
+}
 .navbar-default {
-	background-color: transparent;
+
 	border-color: transparent;
 }
 
