@@ -1,0 +1,12 @@
+[
+{
+    "fields": {
+        "start_date": "2015-12-12T00:00:00Z",
+        "place": "mooplace",
+        "event": "mooevent",
+        "location": "moolocation"
+    },
+    "model": "database.performance",
+    "pk": 1
+}
+]
