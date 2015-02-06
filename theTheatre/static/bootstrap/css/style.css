@@ -198,11 +198,11 @@ li a:hover{
 	color: #1abc9c;
 }
 
-.collapse {
+.collapse.navbar-collapse {
 	 color: rgba(255, 255, 255, 0.6);
 }
 .navbar-default {
-
+ color: rgba(255, 255, 255, 0.6);
 	border-color: transparent;
 }
 
