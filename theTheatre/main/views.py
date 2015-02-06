@@ -14,6 +14,10 @@ def performances(request):
 	performances = {'Performance': performance_array}
 	return render(request, 'main/performances.html', performances)
 
+def performances_unit(request, id_num=0):
+    selection = {'Performance': Performance.objects.get(id=id_num)}
+    return render(request, 'main/performances_unit.html', selection)
+
 def merch(request):
     merchandise_array = Merchandise.objects.all()
     merchandises = {'Merchandise': merchandise_array}
