@@ -1,22 +1,22 @@
 [
 {
   "fields": {
-    "date": "2015-05-02T00:00:00Z",
-    "image": "moo.jpg",
-    "place": "placetext",
-    "event": "eventtext",
-    "location": "locationtext"
+    "date": "yup cow time",
+    "image": "moo.jpg2",
+    "description": "placetext2",
+    "event": "eventtext2",
+    "price": "12.45"
   },
   "model": "database.performance",
   "pk": 1
   },
   {
   "fields": {
-    "date": "2015-05-02T00:00:00Z",
+    "date": "yup cow time",
     "image": "moo.jpg2",
-    "place": "placetext2",
+    "description": "placetext2",
     "event": "eventtext2",
-    "location": "locationtext2"
+    "price": "12.45"
   },
   "model": "database.performance",
   "pk": 2
@@ -60,15 +60,5 @@
   },
   "model": "database.merchandise",
   "pk": 4
-  },
-  {
-  "fields": {
-    "date": "2015-05-02T00:00:00Z",
-    "price": "80.81",
-    "place": "placetext",
-    "location": "locationtext"
-  },
-  "model": "database.ticketsale",
-  "pk": 1
-}
+  }
 ]

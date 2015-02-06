@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from database.models import Performance, Merchandise, TicketSale
+from database.models import Performance, Merchandise
 
 def home(request):
 	return render(request, 'main/index.html', {})

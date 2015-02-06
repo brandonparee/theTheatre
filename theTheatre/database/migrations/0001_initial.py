@@ -15,8 +15,9 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=200)),
-                ('description', models.CharField(max_length=200)),
+                ('description', models.CharField(max_length=2000)),
                 ('price', models.DecimalField(max_digits=5, decimal_places=2)),
+                ('image', models.URLField()),
             ],
             options={
             },
@@ -27,22 +28,10 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('event', models.CharField(max_length=200)),
-                ('place', models.CharField(max_length=200)),
-                ('location', models.CharField(max_length=200)),
-                ('start_date', models.DateTimeField(verbose_name=b'date published')),
-            ],
-            options={
-            },
-            bases=(models.Model,),
-        ),
-        migrations.CreateModel(
-            name='TicketSale',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('place', models.CharField(max_length=200)),
-                ('location', models.CharField(max_length=200)),
-                ('start_date', models.DateTimeField(verbose_name=b'date published')),
+                ('description', models.CharField(max_length=2000)),
                 ('price', models.DecimalField(max_digits=5, decimal_places=2)),
+                ('date', models.CharField(max_length=200)),
+                ('image', models.URLField()),
             ],
             options={
             },

@@ -3,26 +3,16 @@ from django.db import models
 # Create your models here.
 class Performance(models.Model):
 	event = models.CharField(max_length=200)
-	place = models.CharField(max_length=200)
-	location = models.CharField(max_length=200)
-	date = models.DateTimeField('date published')
+	description = models.CharField(max_length=2000)
+	price = models.DecimalField(max_digits = 5, decimal_places = 2)
+	date = models.CharField(max_length=200)
 	image = models.URLField(max_length=200)
-
-	def __str__(self):
-		return self.event
-
 
 class Merchandise(models.Model):
 	name = models.CharField(max_length=200)
-	description = models.CharField(max_length=200)
+	description = models.CharField(max_length=2000)
 	price = models.DecimalField(max_digits = 5, decimal_places = 2)
 	image = models.URLField(max_length=200)
-
-class TicketSale(models.Model):
-	place = models.CharField(max_length=200)
-	location = models.CharField(max_length=200)
-	date = models.DateTimeField('date published')
-	price = models.DecimalField(max_digits = 5, decimal_places = 2)
 
 #how to see whats in the database through CMD:
 #CMD: python manage.py dumpdata <appname> <options>

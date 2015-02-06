@@ -30,10 +30,8 @@
 
 <h1>Content Goes Here for Performances</h1>
 	{% for p in Performance%}
-		event: {{ Performance.event }} <br>
-		place: {{ Performance.place }} <br>
-		location: {{ Performance.event }} <br>
-		date: {{ Performance.location }} <br>
-		image: {{ Performance.image }} <br><br>
+		event: {{ p.event }} <br>
+		date: {{ p.price }} <br>
+		image: {{ p.image }} <br><br>
 	{% endfor %}
 {% endblock %}
