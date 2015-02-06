@@ -5,5 +5,29 @@
 {% endblock title %}
 
 {% block content %}
-<h1>Content Goes Here for Sales</h1>
+<div class="container">
+    <br>
+    <form>
+        <h3>Select Show</h3>
+        <select class="form-control">
+            {% for p in Performance %}
+            <option>{{p.event}}</option>
+            {% endfor %}
+        </select>
+        <h3>Select Seat Location</h3>
+        <select class="form-control">
+            <option>Nosebleed</option>
+            <option>Floor</option>
+            <option>Balcony</option>
+            <option>VIP</option>
+            <option>All-Access</option>
+        </select>
+        <h3>Enter Number of Seats</h3>
+        <input type="number" class="form-control" placeholder="0">
+
+        <br>
+        <button type="submit">Purchase Tickets</button>
+        <button type="reset">Clear</button>
+    </form>
+</div>
 {% endblock %}
