@@ -34,7 +34,7 @@
   },
   {
   "fields": {
-    "price": "10.00",
+    "price": "150.99",
     "name": "Opera Glasses",
     "image": "img/merch/merch00.jpg",
     "description": "these are opera glasses.  You can see with 'em"
@@ -44,7 +44,7 @@
   },
   {
   "fields": {
-    "price": "20.00",
+    "price": "499.99",
     "name": "Sophisticated Hat",
     "image": "img/merch/merch01.jpg",
     "description": "Put on head. Yup"
@@ -54,7 +54,7 @@
   },
   {
   "fields": {
-    "price": "33.33",
+    "price": "99.99",
     "name": "Snobby Champagne",
     "image": "img/merch/merch02.jpg",
     "description": "Keep your champagne cold and your friend away."
@@ -64,7 +64,7 @@
   },
   {
   "fields": {
-    "price": "12.45",
+    "price": "199.99",
     "name": "Elegant White Gloves",
     "image": "img/merch/merch03.jpg",
     "description": "Buy one get one free (sorta)"
