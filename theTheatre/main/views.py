@@ -10,14 +10,14 @@ def about(request):
 	return render(request, 'main/about.html', {})
 
 def performances(request):
-	performances = Performance.objects.all()
-	
-	test = {'Performance': performances}
-	
-	return render(request, 'main/performances.html', test)
+	performance_array = Performance.objects.all()
+	performances = {'Performance': performance_array}
+	return render(request, 'main/performances.html', performances)
 
 def merch(request):
-	return render(request, 'main/merch.html', {})
+    merchandise_array = Merchandise.objects.all()
+    merchandises = {'Merchandise': merchandise_array}
+    return render(request, 'main/merch.html', merchandises)
 
 def sales(request):
 	return render(request, 'main/sales.html', {})
