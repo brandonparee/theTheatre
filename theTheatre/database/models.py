@@ -26,7 +26,7 @@ class TicketSale(models.Model):
 
 #how to see whats in the database through CMD:
 #CMD: python manage.py dumpdata <appname> <options>
-#	python manage.py dumpdata database
+#	python manage.py dumpdata database --indent 2
 #
 #how to clear data from tables
 #CMD: python manage.py flush

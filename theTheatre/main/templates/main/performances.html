@@ -6,6 +6,7 @@
 {% endblock title %}
 
 {% block content %}
+
 <h1 class="otherpageheader">Performances</h1>
 <div class="panel panel-default">
 	<div class="panel-content panelstyle" >
@@ -26,4 +27,13 @@
 	</div>
 </div>
 
+
+<h1>Content Goes Here for Performances</h1>
+	{% for p in Performance%}
+		event: {{ p.event }} <br>
+		place: {{ p.place }} <br>
+		location: {{ p.event }} <br>
+		date: {{ p.location }} <br>
+		image: {{ p.image }} <br><br>
+	{% endfor %}
 {% endblock %}
