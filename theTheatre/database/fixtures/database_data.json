@@ -8,14 +8,47 @@
     "location": "locationtext"
   },
   "model": "database.performance",
-  "pk": 1
+  "pk": 1,
+  "fields": {
+    "date": "2015-05-02T00:00:00Z",
+    "image": "moo.jpg2",
+    "place": "placetext2",
+    "event": "eventtext2",
+    "location": "locationtext2"
+  },
+  "model": "database.performance",
+  "pk": 2
 },
 {
   "fields": {
+    "price": "10.00",
+    "name": "Opera Glasses",
+    "image": "merch/merch00.jpg",
+    "description": "these are opera glasses.  You can see with 'em"
+  },
+  "model": "database.merchandise",
+  "pk": 1,
+  "fields": {
+    "price": "20.00",
+    "name": "Sophisticated Hat",
+    "image": "merch/merch01.jpg",
+    "description": "Put on head. Yup"
+  },
+  "model": "database.merchandise",
+  "pk": 2,
+  "fields": {
+    "price": "33.33",
+    "name": "Snobby Champagne",
+    "image": "merch/merch02.jpg",
+    "description": "Keep your champagne cold and your friend away."
+  },
+  "model": "database.merchandise",
+  "pk": 3,
+  "fields": {
     "price": "12.45",
-    "name": "nametext",
-    "image": "mer_moo.jpg",
-    "description": "text about stuff"
+    "name": "Elegant White Gloves",
+    "image": "merch/merch03.jpg",
+    "description": "Buy one get one free (sorta)"
   },
   "model": "database.merchandise",
   "pk": 1

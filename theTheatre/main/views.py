@@ -12,9 +12,9 @@ def about(request):
 def performances(request):
 	performances = Performance.objects.all()
 	
-	test = "moo"#{'message': performances[0].event}
+	test = {'Performance': performances}
 	
-	return render(request, 'main/performances.html', {'message': 'img/about.jpg'})
+	return render(request, 'main/performances.html', test)
 
 def merch(request):
 	return render(request, 'main/merch.html', {})

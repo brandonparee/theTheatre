@@ -7,6 +7,11 @@
 
 {% block content %}
 <h1>Content Goes Here for Performances</h1>
-Here is the message variable from my view definition: {{ message }}
-<img src="{% static message %}" alt="test">
+	{% for p in Performance%}
+		event: {{ p.event }} <br>
+		place: {{ p.place }} <br>
+		location: {{ p.event }} <br>
+		date: {{ p.location }} <br>
+		image: {{ p.image }} <br><br>
+	{% endfor %}
 {% endblock %}
