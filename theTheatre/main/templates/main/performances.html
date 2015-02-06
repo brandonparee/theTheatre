@@ -8,9 +8,35 @@
 {% block content %}
 
 <h1 class="otherpageheader">Performances</h1>
+<<<<<<< HEAD
 {% for p in Performance %}
 
 <div class="panel panel-default text-center">
+=======
+<div class="panel panel-default">
+	<div class="panel-content panelstyle" >
+		<h3>The Abraham Lincoln Experience</h3>
+		<br/>
+		<img src="http://cdn.history.com/sites/2/2013/11/abraham-lincoln-assassination-AB.jpeg"/>
+		<br/>
+		<p>Showing: March 3-5 at 8:00PM</p>
+		<br/>
+		<p>A tal that puts you in the shoes of a man with a wicked a beard and box seats</p>
+	</div>
+</div> 
+<div class="panel panel-default">
+	<div class="panel-content panelstyle">	
+		<h3>Saw: The Musical</h3>
+		<br/>
+		<img style="max-height:600px; max-width:350px" src="https://halloweenmeca.files.wordpress.com/2012/10/jigsaw.jpg"/>
+		<br/>
+		<p>Showing: May 18-21 at 8:00PM<p/>
+		<br/>
+		<p>In this humorous twist on a classic story, you follow a group of individuals through the worst night on of their lives, as each one discover who they truly are. Screaming has never sounded this musical! </p>
+	</div>
+</div>
+<div class="panel panel-default">
+>>>>>>> c7ecd2386c2dd7775523fe9def8931125f6a19be
 	<div class="panel-content panelstyle">	
 		<h3>{{p.event}}</h3>
 		<br/>
@@ -22,5 +48,14 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
 {% endfor %}
+=======
+
+	{% for p in Performance%}
+		event: {{ p.event }} <br>
+		date: {{ p.price }} <br>
+		image: {{ p.image }} <br><br>
+	{% endfor %}
+>>>>>>> c7ecd2386c2dd7775523fe9def8931125f6a19be
 {% endblock %}
