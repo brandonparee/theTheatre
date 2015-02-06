@@ -1,25 +1,36 @@
 [
 {
   "fields": {
-    "date": "yup cow time",
-    "image": "moo.jpg2",
-    "description": "placetext2",
-    "event": "eventtext2",
-    "price": "12.45"
+    "date": "Showing: March 3-5 at 8:00PM",
+    "image": "http://cdn.history.com/sites/2/2013/11/abraham-lincoln-assassination-AB.jpeg",
+    "description": "A tale that puts you in the shoes of a man with a wicked a beard and box seats",
+    "event": "The Abraham Lincoln Experience",
+    "price": "129.98"
   },
   "model": "database.performance",
   "pk": 1
   },
   {
   "fields": {
-    "date": "yup cow time",
-    "image": "moo.jpg2",
-    "description": "placetext2",
-    "event": "eventtext2",
-    "price": "12.45"
+    "date": "Showing: May 18-21 at 8:00PM",
+    "image": "https://halloweenmeca.files.wordpress.com/2012/10/jigsaw.jpg",
+    "description": "In this humorous twist on a classic story, you follow a group of individuals through the worst night on of their lives, as each one discover who they truly are. Screaming has never sounded this musical!",
+    "event": "Saw: The Musical",
+    "price": "100.94"
   },
   "model": "database.performance",
   "pk": 2
+  },
+  {
+  "fields": {
+    "date": "Showing: December 12-15 at 8:00PM",
+    "image": "http://image.slidesharecdn.com/moose-1224869052473168-8/95/if-you-give-a-moose-a-muffin-1-728.jpg?cb=1224864302",
+    "description": "Find out what happens when you do give a moose a muffin, and what consequences will follow",
+    "event": "If you Give a Moose a Muffin",
+    "price": "900.94"
+  },
+  "model": "database.performance",
+  "pk": 3
   },
   {
   "fields": {
