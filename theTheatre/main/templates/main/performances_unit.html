@@ -12,11 +12,13 @@
 	<div class="panel-content panelstyle">	
 		<h3>{{Performance.event}}</h3>
 		<br/>
-		<img style="max-height: 300px;" class="" src="{{Performance.image}}"/>
+		<img style="max-height: 300px;" class="img-responsive" src="{{Performance.image}}"/>
 		<br/>
 		<p>{{Performance.date}}</p>
 		<br/>
 		<p>{{Performance.description}}</p>
+		<p>Base Seat Price is set at</p>
+		<p>${{ Performance.price }}</p>
 	</div>
 </div>	
 {% endblock %}

@@ -6,67 +6,59 @@
     <link href="{% static 'css/custom.css' %}" rel="stylesheet" media="screen">
    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     
+    <title>the theatre</title>
   </head>
 
   <body>
 
-{% block title %}
-<title>the theatre</title>
-{% endblock title %}
 
+    <div class="background" style="min-height:100%;">
+    <h1>The Pretentious Theatre</h1>
+    <br/>
+    <h2> <ul class="center-block inline row">
+              <li class=""><a href="{% url 'main.views.home' %}">Home<span class="sr-only"></span></a></li>
+              <li class=""><a href="{% url 'main.views.about' %}">About<span class="sr-only"></span></a></li>
+              <li class=""><a href="{% url 'main.views.performances' %}">Performances<span class="sr-only"></span></a></li>
+              <li class=""><a href="{% url 'main.views.merch' %}">Merchandise<span class="sr-only"></span></a></li>
+              <li class=""><a href="{% url 'main.views.sales' %}">Sales<span class="sr-only"></span></a></li>
+             
+              
+             
+            </ul></h2>
 
-{% block content %}
-
-<div class="background">
-<h1>The Pretentious Theatre</h1>
-<br/>
-<h2> <ul class="center-block inline row">
-          <li class=""><a href="{% url 'main.views.home' %}">Home<span class="sr-only"></span></a></li>
-          <li class=""><a href="{% url 'main.views.about' %}">About<span class="sr-only"></span></a></li>
-          <li class=""><a href="{% url 'main.views.performances' %}">Performances<span class="sr-only"></span></a></li>
-          <li class=""><a href="{% url 'main.views.merch' %}">Merchandise<span class="sr-only"></span></a></li>
-          <li class=""><a href="{% url 'main.views.sales' %}">Sales<span class="sr-only"></span></a></li>
-         
+        <footer class="navbar-fixed-bottom">
+        <div id="social">
+        <div class="container">
+          <div class="row centered">
+            <div class="col-xs-4 col-md-2">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="col-xs-4 col-md-2">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col-xs-4 col-md-2">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="col-xs-4 col-md-2">
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+            <div class="col-xs-4 col-md-2">
+              <a href="#"><i class="fa fa-tumblr"></i></a>
+            </div>
+            <div class="col-xs-4 col-md-2">
+              <a href="https://github.com/brandonparee/theTheatre"><i class="fa fa-github"></i></a>
+            </div>
           
-         
-        </ul></h2>
-
-
-
-</div>
-{% endblock %}
-
-<footer>
-    <div id="social">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-xs-4 col-md-2">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-        </div>
-        <div class="col-xs-4 col-md-2">
-          <a href="#"><i class="fa fa-twitter"></i></a>
-        </div>
-        <div class="col-xs-4 col-md-2">
-          <a href="#"><i class="fa fa-instagram"></i></a>
-        </div>
-        <div class="col-xs-4 col-md-2">
-          <a href="#"><i class="fa fa-youtube"></i></a>
-        </div>
-        <div class="col-xs-4 col-md-2">
-          <a href="#"><i class="fa fa-tumblr"></i></a>
-        </div>
-        <div class="col-xs-4 col-md-2">
-          <a href="https://github.com/brandonparee/theTheatre"><i class="fa fa-github"></i></a>
-        </div>
+          </div><!--/row -->
+       
       
-      </div><!--/row -->
-   
-  
-</footer>
+    </footer>
 
-  <!-- </div> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     </div>
-  </body>
-</html>
+
+      <!-- </div> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        </div>
+    </body>
+  </html>
