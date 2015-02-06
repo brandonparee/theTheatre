@@ -19,6 +19,10 @@ def merch(request):
     merchandises = {'Merchandise': merchandise_array}
     return render(request, 'main/merch.html', merchandises)
 
+def merch_unit(request, id_num=0):
+    selection = {'Merch': Merchandise.objects.get(id=id_num)}
+    return render(request, 'main/merch_unit.html', selection)
+
 def sales(request):
 	return render(request, 'main/sales.html', {})
 

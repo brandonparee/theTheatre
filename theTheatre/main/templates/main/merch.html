@@ -7,7 +7,7 @@
 {% block content %}
 <div class="row">
     {% for p in Merchandise %}
-        <a href="/merch_{{ p.id }}">
+        <a href="/merch{{ p.id }}">
             <div class="col-md-3 column productbox">
                 <img src={% static p.image %} alt="test" class="img-responsive">
                 <div class="producttitle">
@@ -15,7 +15,7 @@
                 </div>
                 <div class="productprice">
                     <div class="pull-right">
-                        <a href="/merch_{{ p.id }}" class="btn btn-danger btn-sm" role="button">BUY</a>
+                        <a href="/merch{{ p.id }}" class="btn btn-danger btn-sm" role="button">BUY</a>
                     </div>
                     <div class="pricetext">
                         ${{ p.price }}

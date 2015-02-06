@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+{% load staticfiles %}
+{% block title %}
+<title>the theatre</title>
+{% endblock title %}
+
+{% block content %}
+<div class="row">
+        <div class="col-md-3 column productbox">
+            <img src={% static Merch.image %} alt="test" class="img-responsive">
+            <div class="producttitle">
+                {{ Merch.name }}
+            </div>
+            <div class="productprice">
+                <div class="pull-right">
+                    <a href="#" class="btn btn-danger btn-sm" role="button">BUY</a>
+                </div>
+                <div class="pricetext">
+                    ${{ Merch.price }}
+                </div>
+            </div>
+        </div>
+</div>
+
+{% endblock %}
