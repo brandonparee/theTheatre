@@ -6,7 +6,7 @@
 
 {% block content %}
 <div class="row">
-        <div class="col-md-3 column productbox">
+        <div class="col-md-6 column productbox">
             <img src={% static Merch.image %} alt="test" class="img-responsive">
             <div class="producttitle">
                 {{ Merch.name }}
@@ -19,6 +19,8 @@
                     ${{ Merch.price }}
                 </div>
             </div>
+			<h4>{{ Merch.description }}</h4>
+
         </div>
 </div>
 
