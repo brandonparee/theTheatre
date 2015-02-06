@@ -9,7 +9,7 @@
 <h1 class="otherpageheader">For Sale</h1><br/>
 <div class="row">
     {% for p in Merchandise %}
-        <a href="/merch{{ p.id }}">
+        <a href="/merch/{{ p.id }}">
             <div class="col-md-3 column productbox">
                 <img src={% static p.image %} alt="test" class="img-responsive">
                 <div class="producttitle">
