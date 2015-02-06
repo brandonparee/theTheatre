@@ -147,6 +147,20 @@ h2 {
    /* margin: 25px;*/
 
 }
+
+.perftext h3{
+ font-size: 50px;
+ text-decoration: none;
+}
+
+.perftext p {
+	 font-size: 20px;
+	 text-decoration: none;
+}
+
+.panelstyle :hover{
+	background-color: #FAFFFA;
+}
 .textonpage p {
     font-size: 20px;
    
