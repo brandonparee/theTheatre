@@ -349,3 +349,7 @@ li a:hover{
 .gallery img:hover {
 	opacity: 0.4;
 }
+
+a:link {
+    text-decoration: none;
+}
