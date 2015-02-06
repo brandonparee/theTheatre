@@ -2,9 +2,11 @@
 {% load staticfiles %}
 {% block title %}
 <title>the theatre</title>
+
 {% endblock title %}
 
 {% block content %}
+<h1 class="otherpageheader">For Sale</h1><br/>
 <div class="row">
     {% for p in Merchandise %}
         <a href="/merch{{ p.id }}">
