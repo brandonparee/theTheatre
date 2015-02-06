@@ -1,0 +1,22 @@
+
+{% extends "main/base.html" %}
+{% load staticfiles %}
+{% block title %}
+<title>the theatre</title>
+{% endblock title %}
+
+{% block content %}
+
+<h1 class="otherpageheader">Performances</h1>
+<div class="panel panel-default text-center">
+	<div class="panel-content panelstyle">	
+		<h3>{{Performance.event}}</h3>
+		<br/>
+		<img style="max-height: 300px;" class="" src="{{Performance.image}}"/>
+		<br/>
+		<p>{{Performance.date}}</p>
+		<br/>
+		<p>{{pPerformance.description}}</p>
+	</div>
+</div>	
+{% endblock %}
