@@ -28,7 +28,9 @@ def merch_unit(request, id_num=0):
     return render(request, 'main/merch_unit.html', selection)
 
 def sales(request):
-	return render(request, 'main/sales.html', {})
+    performance_array = Performance.objects.all()
+    performances = {'Performance': performance_array}
+    return render(request, 'main/sales.html', performances)
 
 #how to add entry to database:
     #1. from CMD "python manage.py shell"
